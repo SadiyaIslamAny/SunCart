@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex gap-1 items-center">
           <Image
-            src={"/logo.png"}
+            src={"/suncartLogo.png"}
             alt="logo"
             loading="eager"
             width={50}
@@ -22,7 +22,7 @@ const Navbar = () => {
             className="object-cover h-auto w-auto"
           />
           <h3 className="font-black text-lg sm:text-xl">
-            SunCart
+            Sun<span className="text-[#f17621]">Cart</span>
           </h3>
         </div>
 
