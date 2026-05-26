@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
+import NavLink from "./NavLink";
+import Link from "next/link";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -29,30 +30,30 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-5 lg:gap-8 text-sm lg:text-base">
           <li>
-            <Link
+            <NavLink
               href={"/"}
               className="hover:text-orange-500 transition"
             >
               Home
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               href={"/all-products"}
               className="hover:text-orange-500 transition"
             >
               Products
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link
+            <NavLink
               href={"/profile"}
               className="hover:text-orange-500 transition"
             >
               My Profile
-            </Link>
+            </NavLink>
           </li>
         </ul>
 
