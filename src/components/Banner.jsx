@@ -4,7 +4,6 @@ import Image from "next/image";
 const Banner = () => {
     return (
 
-
         <div className="relative w-11/12 min-h-[90vh] overflow-hidden mx-auto bg-[#f7ecdf] rounded-[22px] sm:rounded-[30px] lg:rounded-[40px]">
 
             <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between min-h-[85vh] lg:min-h-[90vh] px-4 sm:px-6 md:px-10 lg:px-20 py-10 lg:py-0">
