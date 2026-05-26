@@ -86,7 +86,7 @@ const ProductDetailsPage = async ({ params }) => {
           {product.name}
         </h1>
 
-        {/* Description */}
+    
         <p
           className="
             text-sm
