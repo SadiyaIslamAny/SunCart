@@ -4,14 +4,14 @@ import ProductsCard from './ProductsCard';
 const ShowProducts = async () => {
     const res = await fetch("https://sun-cart-ebon-eight.vercel.app/data.json");
     const products = await res.json()
-    const popularProducts = products.slice(2,6)
+    const popularProducts = products.slice(0,3)
     // console.log(popularProducts)
     return (
          <div className="w-11/12 mx-auto py-10">
 
             {/* Section Title */}
             <div className="text-center mb-8">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#f17621]">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#f17621] animate__animated animate__pulse animate__infinite">
                     Popular Products
                 </h1>
 

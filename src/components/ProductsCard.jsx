@@ -1,149 +1,135 @@
-// import { Card, Chip, Separator } from "@heroui/react";
-// import Image from "next/image";
-// import { Button } from '@heroui/react';
-// import Link from "next/link";
-// import { FcRating } from "react-icons/fc";
-
-
-
-// const ProductsCard = ({ product }) => {
-//     // console.log(photo)
-//     return (
-//         <Card className="border rounded-xl">
-//             <div className="relative w-full aspect-square">
-//                 <Image
-//                     src={product.image}
-//                     fill={true}
-//                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-//                     alt={product.name}
-//                     className="object-cover rounded-xl"
-//                 />
-//                 <Chip size="sm" className="absolute right-2 top-2">{product.category}</Chip>
-
-//             </div>
-//             <div>
-//                 <h2 className="font-medium">{product.name}</h2>
-//             </div>
-//             <div className="flex gap-5">
-//                 <div className="flex items-center gap-2">
-//                     <FcRating className="text-xl" />
-//                     <p>{product.rating}</p>
-//                 </div>
-
-//                 <Separator orientation="vertical"/>
-
-//                 <div className="flex items-center gap-2">
-//                     <p>${product.price}</p>
-//                 </div>
-//             </div>
-
-//             <Link href={`/all-photos/${product.id}`}><Button variant="outline" className={''}>View</Button></Link>
-//         </Card>
-//     );
-// };
-
-// export default ProductsCard;
-
-
 import { Card, Chip, Separator, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { FcRating } from "react-icons/fc";
+import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
 const ProductsCard = ({ product }) => {
     return (
-        <Card
-            className="
-                border rounded-2xl overflow-hidden
-                p-3 sm:p-4
-                hover:shadow-lg transition-all duration-300
-            "
+
+<Card
+  className="
+    border border-orange-100
+    rounded-3xl
+    overflow-hidden
+    p-3 sm:p-4 lg:p-5
+    hover:shadow-xl
+    transition-all duration-300
+    bg-[#f7ecdf]/40
+  "
+>
+  {/* Product Image */}
+  <div
+    className="
+      relative
+      w-full
+      aspect-square
+      overflow-hidden
+      rounded-4xl
+      bg-[#f7ecdf]/20
+    "
+  >
+    <Image
+      src={product.image}
+      fill
+      alt={product.name}
+      sizes="
+        (max-width: 640px) 100vw,
+        (max-width: 1024px) 50vw,
+        33vw
+      "
+      className="
+        object-contain
+        p-4 sm:p-6
+        hover:scale-105
+        transition-transform duration-300
+      "
+    />
+  </div>
+
+  {/* Product Info */}
+  <div className="mt-4 sm:mt-5">
+    
+    {/* Category */}
+    <Chip
+      size="sm"
+      className="
+        bg-orange-100
+        text-[#f17621]
+        border-0
+        text-[10px] sm:text-sm
+        mb-3
+        p-2
+      "
+    >
+      {product.category}
+    </Chip>
+
+    {/* Product Name */}
+    <h2
+      className="
+        text-base sm:text-lg lg:text-xl
+        font-semibold
+        text-gray-800
+        line-clamp-1
+      "
+    >
+      {product.name}
+    </h2>
+
+    {/* Price */}
+    <p
+      className="
+        text-xl sm:text-2xl
+        font-bold
+        text-[#f17621]
+        mt-2
+      "
+    >
+      ${product.price}
+    </p>
+
+    {/* Rating + View Details */}
+    <div className="flex items-center justify-between mt-4 gap-3">
+      
+      {/* Rating */}
+      <div
+        className="
+          flex items-center gap-1
+          bg-[#f17621]
+          text-white
+          px-2 sm:px-3
+          py-1
+          rounded-full
+          w-fit
+        "
+      >
+        <span className="text-xs sm:text-sm font-medium">
+          {product.rating}
+        </span>
+
+        <IoIosStar className="text-sm sm:text-base" />
+      </div>
+
+      {/* View Details */}
+      <Link href={`/all-products/${product.id}`}>
+        <button
+          className="
+            text-xs sm:text-sm md:text-base
+            font-medium
+            border-2 border-orange-500 rounded-4xl py-1 px-2
+            text-[#f17621]
+            hover:text-[#d96313]
+            transition
+            whitespace-nowrap animate__animated animate__headShake animate__infinite
+          "
         >
-            {/* Product Image */}
-            <div className="relative w-full aspect-square overflow-hidden rounded-xl">
-                <Image
-                    src={product.image}
-                    fill
-                    sizes="(max-width: 640px) 100vw,
-                           (max-width: 1024px) 50vw,
-                           33vw"
-                    alt={product.name}
-                    className="
-                        object-cover
-                        object-top
-                        rounded-xl
-                        hover:scale-105
-                        transition-transform duration-300
-                    "
-                />
-
-                {/* Category Chip */}
-                <Chip
-                    size="sm"
-                    variant="bordered"
-                    className="
-                        absolute right-2 top-2
-                        border-[#f17621]
-                        text-[#f17621]
-                        bg-white/80 backdrop-blur-sm
-                        text-xs sm:text-sm
-                    "
-                >
-                    {product.category}
-                </Chip>
-            </div>
-
-            {/* Product Info */}
-            <div className="mt-3 space-y-3">
-                <h2
-                    className="
-                        font-semibold
-                        text-sm sm:text-base lg:text-lg
-                        line-clamp-1
-                    "
-                >
-                    {product.name}
-                </h2>
-
-                {/* Rating & Price */}
-                <div className="flex items-center gap-3 sm:gap-5">
-                    <div className="flex items-center gap-1">
-                        <FcRating className="text-lg sm:text-xl" />
-                        <p className="text-sm sm:text-base">
-                            {product.rating}
-                        </p>
-                    </div>
-
-                    <Separator orientation="vertical" className="h-5" />
-
-                    <div>
-                        <p
-                            className="
-                                font-medium
-                                text-sm sm:text-base
-                            "
-                        >
-                            ${product.price}
-                        </p>
-                    </div>
-                </div>
-
-                {/* Button */}
-                <Link href={`/all-photos/${product.id}`}>
-                    <Button
-                        className="
-                            w-full
-                            bg-[#f17621]
-                            text-white
-                            font-medium
-                            text-sm sm:text-base
-                        "
-                    >
-                        View Details
-                    </Button>
-                </Link>
-            </div>
-        </Card>
+          View Details 
+        </button>
+      </Link>
+    </div>
+  </div>
+</Card>
     );
 };
 

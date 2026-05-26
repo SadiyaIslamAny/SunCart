@@ -39,7 +39,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href={"/all-photos"}
+              href={"/all-products"}
               className="hover:text-orange-500 transition"
             >
               Products
@@ -101,7 +101,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              href={"/all-photos"}
+              href={"/all-products"}
               onClick={() => setOpen(false)}
               className="hover:text-orange-500 transition"
             >
