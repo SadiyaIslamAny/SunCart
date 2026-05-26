@@ -6,7 +6,7 @@ import { IoIosStar } from 'react-icons/io';
 
 const ProductDetailsPage = async ({ params }) => {
     const { id } = await params;
-    const res = await fetch('http://localhost:3000/data.json')
+    const res = await fetch('https://sun-cart-ebon-eight.vercel.app/data.json')
     const products = await res.json()
 
     const product = products.find(p => p.id == id)
