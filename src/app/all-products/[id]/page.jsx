@@ -113,7 +113,7 @@ const ProductDetailsPage = async ({ params }) => {
           ${product.price}
         </h2>
 
-        {/* Rating */}
+        
        
         <div
           className="
@@ -133,7 +133,7 @@ const ProductDetailsPage = async ({ params }) => {
           <IoIosStar className="text-lg" />
         </div>
 
-        {/* Buttons */}
+        
        
       </div>
     </div>
