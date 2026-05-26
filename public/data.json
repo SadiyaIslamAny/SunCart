@@ -21,19 +21,8 @@
     "image": "https://media.sezane.com/image/upload/c_fill,d_placeholder_dark.png,fl_progressive:semi,h_816,q_auto:best,w_582/mpydxltvrmpxa7dvzypl.jpg",
     "category": "Accessories"
   },
-  {
+    {
     "id": 3,
-    "name": "Hydrating Aloe Vera Gel",
-    "brand": "PureSkin",
-    "price": 10,
-    "rating": 4.8,
-    "stock": 50,
-    "description": "Cooling aloe vera gel that soothes sunburn and hydrates skin.",
-    "image": "https://cdn.flaconi.de/media/catalog/product/p/r/primavera-aloe-vera-gel-hydrating-koerpergel-75-ml-4086900746008.jpg?r=1RSjDZ&w=600&q=80",
-    "category": "Skincare"
-  },
-  {
-    "id": 4,
     "name": "Straw Beach Hat",
     "brand": "SunnyStyle",
     "price": 12,
@@ -42,6 +31,17 @@
     "description": "Wide-brim straw hat for maximum sun protection and style.",
     "image": "https://i.etsystatic.com/60663567/r/il/c8d92c/7016694622/il_1588xN.7016694622_6nrr.jpg",
     "category": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Hydrating Aloe Vera Gel",
+    "brand": "PureSkin",
+    "price": 10,
+    "rating": 4.8,
+    "stock": 50,
+    "description": "Cooling aloe vera gel that soothes sunburn and hydrates skin.",
+    "image": "https://cdn.flaconi.de/media/catalog/product/p/r/primavera-aloe-vera-gel-hydrating-koerpergel-75-ml-4086900746008.jpg?r=1RSjDZ&w=600&q=80",
+    "category": "Skincare"
   },
   {
     "id": 5,
