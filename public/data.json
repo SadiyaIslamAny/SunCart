@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Light Summer Linen Shirt",
+    "brand": "AirWear",
+    "price": 22,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "Breathable linen shirt perfect for hot summer days and casual outings.",
+    "image": "https://i.pinimg.com/1200x/eb/5b/e8/eb5be8b0e89faa76f53ed19c93ccee9c.jpg",
+    "category": "Fashion"
+  },
+  {
+    "id": 2,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunGuard",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 18,
+    "description": "Stylish sunglasses with full UV protection for sunny summer vibes.",
+    "image": "https://media.sezane.com/image/upload/c_fill,d_placeholder_dark.png,fl_progressive:semi,h_816,q_auto:best,w_582/mpydxltvrmpxa7dvzypl.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "name": "Hydrating Aloe Vera Gel",
+    "brand": "PureSkin",
+    "price": 10,
+    "rating": 4.8,
+    "stock": 50,
+    "description": "Cooling aloe vera gel that soothes sunburn and hydrates skin.",
+    "image": "https://cdn.flaconi.de/media/catalog/product/p/r/primavera-aloe-vera-gel-hydrating-koerpergel-75-ml-4086900746008.jpg?r=1RSjDZ&w=600&q=80",
+    "category": "Skincare"
+  },
+  {
+    "id": 4,
+    "name": "Straw Beach Hat",
+    "brand": "SunnyStyle",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 25,
+    "description": "Wide-brim straw hat for maximum sun protection and style.",
+    "image": "https://i.etsystatic.com/60663567/r/il/c8d92c/7016694622/il_1588xN.7016694622_6nrr.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Cooling Face Mist",
+    "brand": "FreshGlow",
+    "price": 9,
+    "rating": 4.4,
+    "stock": 40,
+    "description": "Refreshing face mist to keep your skin cool and fresh in summer heat.",
+    "image": "https://i.pinimg.com/1200x/41/b4/4c/41b44ce5d6bb2b48fdc54f63007ed1bf.jpg",
+    "category": "Skincare"
+  },
+  {
+    "id": 6,
+    "name": "Beach Sandals",
+    "brand": "WaveStep",
+    "price": 14,
+    "rating": 4.6,
+    "stock": 35,
+    "description": "Comfortable and durable sandals perfect for beach walks and travel.",
+    "image": "https://i.pinimg.com/736x/35/ed/d3/35edd3300c8d60e780efd0a2cec1530c.jpg",
+    "category": "Footwear"
+  },
+  {
+    "id": 7,
+    "name": "Portable Mini Fan",
+    "brand": "CoolBreeze",
+    "price": 11,
+    "rating": 4.3,
+    "stock": 45,
+    "description": "Handheld rechargeable fan for instant cooling anywhere.",
+    "image": "https://i.pinimg.com/736x/d0/39/d7/d039d768dce45d7c104e34c376a927ed.jpg",
+    "category": "Must-Haves"
+  },
+  {
+    "id": 8,
+    "name": "Summer Cotton Dress",
+    "brand": "BloomWear",
+    "price": 28,
+    "rating": 4.7,
+    "stock": 20,
+    "description": "Soft and stylish cotton dress designed for a fresh summer look.",
+    "image": "https://i.pinimg.com/1200x/91/f4/46/91f446c19ccc4e2130713ba4a98ec6e2.jpg",
+    "category": "Fashion"
+  }
+]
